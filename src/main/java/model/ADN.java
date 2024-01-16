@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -36,8 +37,13 @@ public class ADN {
         }
     }
 
-    public static void buscarADNFilas(){
-
-
+    public static void hallarSecuenciaCaracteres(char[][] matriz) {
+        int contadorLetrasIguales = 0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                //Logica
+            }
+        }
     }
 }
+
