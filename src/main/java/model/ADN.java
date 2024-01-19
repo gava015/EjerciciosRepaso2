@@ -1,7 +1,10 @@
 package model;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.List;
+=======
+>>>>>>> 115e03876312239e1fe108e51cbe8ed7681ac17d
 import java.util.Random;
 import java.util.Scanner;
 
@@ -45,6 +48,7 @@ public class ADN {
         }
     }
 
+<<<<<<< HEAD
     public static List<String> buscarCadenaADN(char adnBuscado, char[][] matrizADN) {
         List<String> posicionesCaracteresIguales = null;
         for (int i = 0; i < matrizADN.length; i++) {
@@ -68,6 +72,15 @@ public class ADN {
             }
         }
         return posicionesCaracteresIguales;
+=======
+    public static void hallarSecuenciaCaracteres(char[][] matriz) {
+        int contadorLetrasIguales = 0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                //Logica
+            }
+        }
+>>>>>>> 115e03876312239e1fe108e51cbe8ed7681ac17d
     }
 }
 
