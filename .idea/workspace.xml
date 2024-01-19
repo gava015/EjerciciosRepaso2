@@ -7,7 +7,10 @@
     <list default="true" id="d21e7ae4-fe35-4af6-aa5a-44d36d613cf8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/ADN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ADN.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Main.java" afterDir="false" />
+=======
+>>>>>>> 115e03876312239e1fe108e51cbe8ed7681ac17d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
