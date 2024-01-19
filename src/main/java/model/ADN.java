@@ -7,10 +7,9 @@ import java.util.Scanner;
 
 public class ADN {
 
-    private static char [][] matrizADN;
 
     public static char[][] crearMatriz(int n) {
-        matrizADN = new char[n][n];
+        char[][] matrizADN = new char[n][n];
         return matrizADN;
     }
 
@@ -18,6 +17,12 @@ public class ADN {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
+
+    public static char obtenerCaracter() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.next().charAt(0);
+    }
+
 
     public static void llenarMatrizAleatoria(char[][] matriz) {
         Random random = new Random();
@@ -40,31 +45,29 @@ public class ADN {
         }
     }
 
-   /* public static void hallarSecuenciaCaracteres(char[][] matriz) {
-        int contadorLetrasIguales = 0;
-        for (int fila = 0; fila < matriz.length; fila++) {
-            for (int col = 0; col < matriz.length; col++) {
-                char letraInicial = matriz [i][j];
-                if(letraInicial == matriz[i][j]+1) {
-                    contadorLetrasIguales += 1;
+    public static List<String> buscarCadenaADN(char adnBuscado, char[][] matrizADN) {
+        List<String> posicionesCaracteresIguales = null;
+        for (int i = 0; i < matrizADN.length; i++) {
+            for (int j = 0; j < matrizADN[i].length; j++) {
 
+                if (matrizADN[i][j] == adnBuscado) {
+                    posicionesCaracteresIguales = new ArrayList<>();
+                    posicionesCaracteresIguales.add("Fila:" + i);
+                    for (int k = j ; k < 3; k++) {
+                        if (k > matrizADN.length - 1) {
+                            if (matrizADN[i][k] == adnBuscado) {
+                                posicionesCaracteresIguales.add("Col:" + k);
+                            }
+                        }
+                    }
 
+                    if(posicionesCaracteresIguales.size()-1 == 4){
+                        break;
+                    }
                 }
             }
         }
+        return posicionesCaracteresIguales;
     }
-
-    */
-    public static List<String> buscarCadenaADN(char adnBuscado){
-
-        "Fila: 1", "Columna:1", "Columna:2","Columna:3",
-
-
-
-
-
-  }
-
-
 }
 
